@@ -1,0 +1,139 @@
+.wrapper {
+    position: relative;
+    background-size: 85% 100%;
+    background-color: white;
+    margin-top: 5%;
+    margin-bottom: 15%;
+}
+.bg {
+  position: absolute;
+  width: 55%;
+  height: 70%;
+  background-color: #f2f2f2;
+  top: 0px;
+}
+
+.headshot {
+    color: #444444;
+    max-width: 400px;
+    margin: 0px 10% 0px 2%;
+}
+
+.heading {
+  font-size: 5vw;
+  font-weight: 525;
+    line-height: 1.33;
+    max-width: 300px;
+    margin-bottom: 20px;
+    color: #222222;
+}
+.tagline {
+  font-size: 1.5vw;
+  font-weight: normal;
+  line-height: 1.75;
+}
+
+.tp-box {
+  position: absolute;
+  bottom: 0px;
+}
+
+.tp {
+  position: relative;
+  width: 32%;
+  height: 25vw;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 0px 20px 0px 20px;
+}
+
+.Tp1{
+  background-image: url("./Assets//image-1.png");
+}
+
+.Tp2{
+  background-image: url("./Assets/image-2.png");
+}
+
+.Tp3{
+  width: 45%;
+  margin-left: 10%;
+  background-image: url("./Assets/image-3.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.BlurRectangle {
+  box-shadow: 10px 20px 20px #e8e7e3;
+  width: 60%;
+  height: 65%;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  bottom: -20%;
+}
+
+.Tp4{
+  background-image: url("./Assets/image-4.png");
+}
+
+.mid-section {
+  position: absolute;
+  padding-left: 6%;
+  color: #ffffff;
+  top: 30%;
+  float: right;
+}
+.TdName {
+  font-family: Lato;
+  font-size: 2vw;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 0px 0px 2% 15%;
+}
+.Tdprices{
+  font-family: Lato;
+  font-size: 1vw;
+  color: #ffffff;
+  padding: 0px 0px 15% 15%;
+}
+.BookNowRecta {
+  width: 35%;
+  height: 23%;
+  border: solid 1px #17027a;
+  position: absolute;
+  left: 10%;
+  bottom: 15%;
+}
+.BookNow {
+   font-size: 0.8vw;
+   color: #17027a;
+   position: absolute;
+   left: 35%;
+   top: 30%;
+ }
+
+  .arrow1 {
+    width: 15%;
+    height: 30%;
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    background-image: url("./Assets/arrow-1@3x.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+
+  .top-section {
+    position: relative;
+    padding: 5% 5%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bottom-section {
+    position: relative;
+    padding: 0% 5%;
+    display: flex;
+    justify-content: space-between;
+  }

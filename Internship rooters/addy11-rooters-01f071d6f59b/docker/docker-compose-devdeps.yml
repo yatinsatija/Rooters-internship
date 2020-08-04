@@ -1,0 +1,15 @@
+version: '2.1'
+
+services:
+
+  rooters-haproxy:
+    command: sh -c 'sed -i "s/\(server .*\)check\b/\1/g" /usr/local/etc/haproxy/haproxy.cfg && haproxy -f /usr/local/etc/haproxy/haproxy.cfg'
+    extra_hosts:
+      - "rooters-user-web:${DOCKERHOST}"
+      - "rooters-admin-web:${DOCKERHOST}"
+      
+    ports:
+      - "8089:8089"       # rooters-web
+      - "443:443"     # rooters-web
+      - "2000:2000"   # haproxy stats page
+      - "14305:14305" # haproxy -> rooters_rdb

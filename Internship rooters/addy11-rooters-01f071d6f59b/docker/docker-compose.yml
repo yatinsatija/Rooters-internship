@@ -1,0 +1,15 @@
+version: '2.1'
+
+
+services:
+
+  rooters_rdb:
+    build: rooters_rdb/
+
+  rooters-haproxy:
+    build: rooters_haproxy/
+    expose:
+      - "8089"    # rooters-web
+      - "443"   # rooters-web
+      - "2000"  # haproxy stats page
+      - "14305" # rooters_sdb

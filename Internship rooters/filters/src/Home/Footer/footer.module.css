@@ -1,0 +1,49 @@
+.wrapper {
+    font-family: Lato;
+    background-color: black;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-around;
+}
+
+.colomn {
+    color: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.header {
+    font-size: 1rem;
+    font-weight: 600;
+    padding-left: 15px;
+    height: 50px;
+}
+
+.logo {
+    background-image: url("./Assets/logo@3x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.item {
+    cursor: pointer;
+    height: 25px;
+    font-size: 0.8rem;
+    padding-left: 15px;
+    max-width: 400px;
+}
+
+.hr-line {
+    background-color: #0f0e11;
+    margin: 0px;
+}
+
+.footer {
+    color: #ffffff;
+    text-align: end;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10%;
+}

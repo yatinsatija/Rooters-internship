@@ -1,0 +1,104 @@
+.headshot {
+    width: 546px;
+    height: 160px;
+    font-family: Lato;
+    font-size: 60px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #222222;
+  }
+  .tagline {
+    width: 557px;
+    height: 56px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    color: #444444;
+  }
+  .bg {
+    width: 900px;
+    height: 770px;
+    background-color: #F2F2F2;
+  }
+  .Tp1{
+    width: 410px;
+    height: 360px;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 350px 280px;
+    left: 600px;
+    top: 200px;
+    background-image: url("./img/image-1.png");
+  }
+  .Tp2{
+    width: 410px;
+    height: 360px;
+    position: absolute;
+    left: 1000px;
+    top: 200px;
+    background-image: url("./img/image-2.png");
+    background-repeat: no-repeat;
+    background-size: 350px 280px;
+  }
+  .Tp3{
+    width: 660px;
+    height: 360px;
+    position: absolute;
+    left: 300px;
+    top: 600px;
+    background-image: url("./img/image-3.png");
+    background-repeat: no-repeat;
+    background-size: 550px 280px;
+  }
+  .Rectangle {
+    width: 409px;
+    height: 224px;
+    opacity: 0.7;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.4);
+    position: absolute;
+    left: 300px;
+    top: 750px;
+  }
+  .Tp4{
+    width: 410px;
+    height: 360px;
+    position: absolute;
+    left: 1000px;
+    top: 600px;
+    background-image: url("./img/image-4.png");
+    background-repeat: no-repeat;
+    background-size: 350px 280px;
+  }
+  .mid-section {
+    position: absolute;
+    padding-left: 6%;
+    color: #FFFFFF;
+    top: 30%;
+    float: right;
+  }
+  .Tp1-Copy {
+    width: 88px;
+    height: 29px;
+    left: 400px;
+    top: 600px;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #FFFFFF;
+    position: absolute;
+    left: 630px;
+    top: 400px;
+  }

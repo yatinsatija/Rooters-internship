@@ -1,0 +1,112 @@
+.wrapper {
+    height: 100vh;
+    background-size: 85% 100%;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-color: black;
+    background-image: url("./Assets/bg-image.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    height: 50px;
+}
+
+.side-menu {
+    cursor: pointer;
+    margin-left: 3%;
+    height: 80%;
+    width: 3%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("./Assets/side-menu-icon@3x.png");
+}
+
+.logo {
+    position: relative;
+    left: 10%;
+    height: 80%;
+    width: 10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("./Assets/logo@3x.png");
+}
+
+.menu {
+    position: absolute;
+    color: #ffffff;
+    font-size: 1vw;
+    font-weight: 600;
+    cursor: pointer;
+    right: 2%;
+  }
+
+  .item {
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .mid-section {
+    /* position: absolute; */
+    padding-left: 6%;
+    color: #ffffff;
+    /* top: 30%; */
+    /* float: right; */
+    width: 35%;
+    /* margin: 10% 0%; */
+  }
+
+  .heading-1 {
+    font-family: "Baloo 2";
+    font-size: 7vw;
+    font-weight: 600;
+    letter-spacing: 1rem;
+  }
+
+  .heading-2 {
+    font-family: Lato;
+    line-height: 1.5;
+    font-size: 2vw;
+    max-width: 500px;
+    padding-left: 30%;
+  }
+
+  .footer {
+      /* position: absolute; */
+      /* bottom: 0px; */
+      color: #ffffff;
+      height: 30%;
+      width: 100%;
+  }
+
+  .scroll-wrapper {
+    width: 10%;
+    cursor: pointer;
+    margin: 3%;
+    /* height: 10%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .scroll-text {
+    color: #ffffff;
+    transform: rotate(-90deg);
+    font-size: 0.8vw;
+    width: 5vw;
+    margin-bottom: 45%;
+  }
+
+  .scroll-image {
+    cursor: pointer;
+    height: 4vw;
+    width: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("./Assets/arrow@3x.png");
+  }

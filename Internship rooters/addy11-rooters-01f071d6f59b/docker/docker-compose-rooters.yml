@@ -1,0 +1,17 @@
+version: '2.1'
+
+services:
+  rooters-haproxy:
+    depends_on:
+      - rooters-admin-web
+      - rooters-user-web
+
+  rooters-user-web:
+    env_file:
+      - rooters.env
+    mem_limit: 6G
+    
+  rooters-admin-web:
+    env_file:
+      - rooters.env
+    mem_limit: 12G

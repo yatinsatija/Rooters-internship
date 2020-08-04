@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.2.4.RELEASE</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.app</groupId>
+    <artifactId>rooters</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <organization>
+        <name>Rooters, Inc.</name>
+        <url>http://www.rooters.in</url>
+    </organization>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <lombok.version>1.18.2</lombok.version>
+        <guava.version>28.1-jre</guava.version>
+        <commons-csv.version>1.7</commons-csv.version>
+        <commons-io.version>2.6</commons-io.version>
+        <commons-lang3.version>3.8.1</commons-lang3.version>
+        <jackson-annotations.version>2.9.9</jackson-annotations.version>
+        <jackson-databind.version>2.9.9.3</jackson-databind.version>
+        <java-servlet-api.version>3.1.0</java-servlet-api.version>
+        <javax-interceptor-api.version>1.2</javax-interceptor-api.version>
+        <javax-transaction-api.version>1.2</javax-transaction-api.version>
+        <jjwt.version>0.6.0</jjwt.version>
+        <mysql-connector-java.version>8.0.15</mysql-connector-java.version>
+        <unboundid-ldapsdk.version>4.0.9</unboundid-ldapsdk.version>
+    </properties>
+
+    <modules>
+        <module>rooters-db-model</module>
+        <module>rooters-db-persist</module>
+        <module>rooters-common-web</module>
+        <module>rooters-user-web</module>
+        <module>rooters-admin-web</module>
+        <module>rooters-admin-ui</module>
+        <module>rooters-user-ui</module>
+        <module>rooters-parent</module>
+        <module>rooters-checkstyle</module>
+        <module>rooters-web-security</module>
+        <module>rooters-email-service</module>
+        <module>rooters-payment-service</module>
+    </modules>
+
+    <profiles>
+        <profile>
+            <!--
+              Profile to update whitesource.  Can be invoked manually with:
+              mvn compile whitesource:update -Pwhitesource -Pskip-uis -DskipTests
+              -->
+            <id>whitesource</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.whitesource</groupId>
+                        <artifactId>whitesource-maven-plugin</artifactId>
+                        <version>19.5.1</version>
+                        <configuration>
+                            <product>Rooters</product>
+                            <productVersion>1.X</productVersion>
+                            <orgToken>b46870745c884ec7914199ac3cf0225b58edfdc58dbc4890b1a0a80623c46421</orgToken>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <exclusions>
+                <exclusion>
+                    <groupId>jakarta.xml.bind</groupId>
+                    <artifactId>jakarta.xml.bind-api</artifactId>
+                </exclusion>
+            </exclusions>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.google.code.findbugs</groupId>
+                    <artifactId>jsr305</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>${commons-io.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3.version}</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <configuration>
+                        <argLine>-Xms8g -Xmx10g -XX:+PrintGC -XX:+PrintGCDateStamps</argLine>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>versions-maven-plugin</artifactId>
+                    <version>2.4</version>
+                </plugin>
+
+                <!--
+                  Generates dependency graphs.
+                  Generate dependency graph of just V3 dependencies
+                    mvn depgraph:graph -DskipTests -Pskip-uis -Dincludes=com.app.rooters
+                -->
+                <plugin>
+                    <groupId>com.github.ferstl</groupId>
+                    <artifactId>depgraph-maven-plugin</artifactId>
+                    <version>3.0.0</version>
+                </plugin>
+
+            </plugins>
+        </pluginManagement>
+    </build>
+
+</project>

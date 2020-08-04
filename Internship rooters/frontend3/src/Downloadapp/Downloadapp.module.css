@@ -1,0 +1,101 @@
+.Rectangle1 {
+    width: 1602px;
+    height: 720px;
+    margin-left: 300px;
+    top: 0%;
+    background-color: #f2f2f2;
+}
+
+.wrapper {
+    min-height: 100vh;
+    background-size: 85% 100%;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-color: white;
+    position: relative;
+}
+
+.home {
+    width: 1920px;
+    height: 7103px;
+    background-color: #ffffff;
+}
+
+.mobile-app {
+    width: 961px;
+    height: 640px;
+    object-fit: contain;
+}
+
+.headshot {
+    width: 446px;
+    height: 160px;
+    font-family: Lato;
+    font-size: 60px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #222222;
+    padding-left: 20%;
+    padding-top: 10%;
+}
+
+.tagline {
+    width: 610px;
+    height: 56px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.75;
+    letter-spacing: normal;
+    color: #444444;
+    padding-left: 20%;
+}
+
+.Rectanglegoogleplay {
+    width: 190px;
+    height: 56px;
+    border-radius: 6px;
+    background-color: #d8d8d8;
+}
+
+.googleplay {
+    width: 190px;
+    height: 56px;
+    object-fit: absolute;
+    background-image: url("./Assets/rsz_googleplay.png");
+    margin-left: 20%;
+    margin-top: 8%;
+}
+
+.Rectangle-Copy-7 {
+    width: 190px;
+    height: 56px;
+    border-radius: 6px;
+    background-color: #000000;
+}
+
+.appstore {
+    width: 190px;
+    height: 56px;
+    object-fit: contain;
+    background-image: url("./Assets/rsz_appstore.png");
+    margin-left: 35%;
+    margin-top: -3.5%;
+}
+
+.mobileapp {
+    width: 600px;
+    height: 640px;
+    object-fit: contain;
+    margin-top: -40%;
+    background-image: url("./Assets/rsz_1mobileapp.png");
+}
+
+.header {
+    flex-direction: row;
+}

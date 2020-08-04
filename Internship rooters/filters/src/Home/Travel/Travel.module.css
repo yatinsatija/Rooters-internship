@@ -1,0 +1,128 @@
+.wrapper {
+    /* min-height: 809px; */
+    position: relative;
+    z-index: 0;
+    margin-bottom: 10%;
+}
+
+.left {
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-image: url("./Assets/bus.jpg");
+    background-size: 100% 100%;
+    margin-top: 10%;
+    box-shadow: 14px 14px 5px rgba(0, 0, 0, 0.15);
+}
+
+.bg-color {
+    position: absolute;
+    right: 0px;
+    width: 80%;
+    height: 75%;
+    background-color: #f2f2f2;
+}
+
+.Rectangle {
+    display: flex;
+}
+  
+.right {
+    position: relative;
+    margin-top: 15%;
+    margin-left: 5%;
+    
+}
+  
+.headshot {
+    font-size: 4vw;
+    font-weight: 600;
+    line-height: 1.33;
+    color: #222222;
+}
+  
+.tagline {
+    max-width: 70%;
+    font-size: 1vw;
+    line-height: 1.75;
+    color: #444444;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-top: 5%;
+    justify-content: space-around;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.location {
+    width: 32px;
+    height: 38px;
+    background-image: url("./Assets/location.png");
+    background-size: 100% 100%;
+}
+  
+.time {
+    width: 38px;
+    height: 38px;
+    background-image: url("./Assets/time.png");
+    background-size: 100% 100%;
+}
+  
+.wifi {
+    width: 44px;
+    height: 31px;
+    background-image: url("./Assets/wifi.png");
+    background-size: 100% 100%;
+}
+  
+.movie {
+    width: 38px;
+    height: 38px;
+    background-image: url("./Assets/movie.png");
+    background-size: 100% 100%;
+}
+  
+.support {
+    width: 38px;
+    height: 38px;
+    background-image: url("./Assets/support.png");
+    background-size: 100% 100%;
+}
+  
+.icon-text {
+    font-size: 0.8vw;
+    font-style: italic;
+    text-align: center;
+    color: #222222;
+}
+  
+.Path {
+    width: 150px;
+    height: 52px;
+    border: solid 1px #17027a;
+    margin-top: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+  
+.arrow-1 {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    background-image: url("./Assets/arrow-1.png");
+    background-size: 100% 100%;
+}
+  
+.Learn-More {
+    font-size: 0.8vw;
+    color: #17027a;
+}

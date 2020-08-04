@@ -1,0 +1,105 @@
+.wrapper {
+    min-height: 100vh;
+    background-size: 85% 100%;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-color: black;
+    background-image: url("./Assets/bg-image.jpg");
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    height: 50px;
+}
+
+.side-menu {
+    cursor: pointer;
+    margin-left: 3%;
+    height: 50px;
+    width: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("./Assets/side-menu-icon@3x.png");
+}
+
+.logo {
+    position: relative;
+    left: 10%;
+    height: 50px;
+    width: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("./Assets/logo@3x.png");
+}
+
+.menu {
+    position: absolute;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    right: 2%;
+  }
+
+  .item {
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+  .mid-section {
+    position: absolute;
+    padding-left: 6%;
+    color: #ffffff;
+    top: 30%;
+    float: right;
+  }
+
+  .heading-1 {
+    font-family: "Baloo 2";
+    font-size: 9rem;
+    font-weight: 600;
+    letter-spacing: 1rem;
+  }
+
+  .heading-2 {
+    font-family: Lato;
+    line-height: 3rem;
+    font-size: 1.8rem;
+    max-width: 500px;
+    padding-left: 25%;
+  }
+
+  .footer {
+      position: absolute;
+      bottom: 0px;
+      color: #ffffff;
+      height: 30%;
+      width: 100%;
+  }
+
+  .scroll-wrapper {
+    width: 50px;
+    cursor: pointer;
+    margin-left: 3%;
+  }
+
+  .scroll-text {
+    color: #ffffff;
+    width: 72px;
+    transform: rotate(-90deg);
+    font-family: Lato;
+    font-size: 14px;
+  }
+
+  .scroll-image {
+    cursor: pointer;
+    height: 54px;
+    margin-top: 70px;
+    margin-left: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("./Assets/arrow@3x.png");
+  }
